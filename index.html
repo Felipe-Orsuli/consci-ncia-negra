@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consciência Negra</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #000;
+            color: #ddd;
+            line-height: 1.6;
+        }
+
+        h1 {
+            color: #f66;
+            text-align: center;
+        }
+
+        h2 {
+            color: #f66;
+            border-bottom: 2px solid #f66;
+            padding-bottom: 5px;
+        }
+
+        .date {
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Consciência Negra</h1>
+    <p class="date">20 de Novembro</p>
+
+    <h2>O que é?</h2>
+    <p>
+        O Dia da Consciência Negra é celebrado em 20 de novembro em homenagem a Zumbi dos Palmares,
+        líder do Quilombo dos Palmares que lutou contra a escravidão no Brasil.
+    </p>
+
+    <h2>Zumbi dos Palmares</h2>
+    <p>
+        Zumbi nasceu livre no Quilombo dos Palmares em 1655. Foi o último líder do quilombo,
+        símbolo de resistência contra a escravidão. Morreu em 20 de novembro de 1695.
+    </p>
+
+    <h2>Importância</h2>
+    <p><strong>Educação:</strong> Valorizar a história e cultura afro-brasileira</p>
+    <p><strong>Igualdade:</strong> Combater o racismo e promover oportunidades</p>
+    <p><strong>Cultura:</strong> Celebrar as contribuições da cultura negra</p>
+
+    <script>
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.classList.add('dark');
+        }
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+            document.documentElement.classList.toggle('dark', e.matches);
+        });
+    </script>
+</body>
+</html>
